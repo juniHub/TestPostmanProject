@@ -17,7 +17,7 @@ const routes = (app) => {
     // GET a specific project
     .get(getProjectWithID)
     
-    // PUT update project
+    // PUT update a project
     .put( updateProject)
 
     // DELETE a project

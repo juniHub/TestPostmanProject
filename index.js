@@ -6,8 +6,7 @@ import routes from './src/routes/projectRoute.js';
 const app = express();
 const PORT = 3000;
 
-// mongoose connection
-
+// mongoose connection for testing
 mongoose.connect('mongodb+srv://juninguyen:mongoDB@cluster0.wpttaf0.mongodb.net/?retryWrites=true&w=majority',{
     useNewUrlParser: true
 });
@@ -15,8 +14,6 @@ mongoose.connect('mongodb+srv://juninguyen:mongoDB@cluster0.wpttaf0.mongodb.net/
 //bodyparser setup
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-
 
 
 routes(app);
